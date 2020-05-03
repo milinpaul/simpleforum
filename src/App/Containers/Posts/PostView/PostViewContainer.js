@@ -7,23 +7,24 @@ import { getSinglePostUrl, getCommentsForPostUrl } from '../../../helpers/apiUrl
 import Button from '../../../Components/Buttons'
 import getUrlParam from '../../../helpers/getUrlParam'
 import { Link } from 'react-router-dom'
+import Comments from './Comments'
 
 const PostViewWrapper = styled.div`
   width: 80%;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-top: 5rem;
 `
 
 const PostViewCard = styled.div`
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
   background-color: #fff;
   padding: 3rem;
-  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `
 
-const PostTitle = styled.h2`
+const Title = styled.h2`
   font-size: 2.2rem;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -48,6 +49,11 @@ const ButtonWrapper = styled.div`
   text-align: center;
 `
 
+const CommentWrapper = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`
+
 const PostViewContainer = ({ match, history, location }) => {
   const [post, loading] = useRequest({
     url: getSinglePostUrl(match?.params?.postId),
@@ -66,11 +72,10 @@ const PostViewContainer = ({ match, history, location }) => {
     history.push('/')
   }
   const stopPropagation = (e) => e.stopPropagation()
-  console.log('comments', comments)
   return (
     <PostViewWrapper>
       <PostViewCard>
-        <PostTitle>{post?.title}</PostTitle>
+        <Title>{post?.title}</Title>
         <Link onClick={stopPropagation} to={`/user/${getUrlParam(location.search, 'userId')}`}>
           <PostAuthor>{getUrlParam(location.search, 'user')}</PostAuthor>
         </Link>
@@ -78,7 +83,18 @@ const PostViewContainer = ({ match, history, location }) => {
         <ButtonWrapper>
           <Button onClick={onGoBackClickHandler}>Go Back</Button>
         </ButtonWrapper>
+        <Title>Comments:</Title>
       </PostViewCard>
+      <CommentWrapper>
+        {comments?.map((comment) => (
+          <Comments
+            key={comment.id}
+            name={comment.name}
+            email={comment.email}
+            body={comment.body}
+          />
+        ))}
+      </CommentWrapper>
     </PostViewWrapper>
   )
 }
