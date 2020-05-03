@@ -24,7 +24,7 @@ const PostsListContainer = ({ history }) => {
     method: { method: 'GET' },
   })
 
-  if (loading && userLoading) {
+  if (loading || userLoading) {
     return <Spinner />
   }
 
