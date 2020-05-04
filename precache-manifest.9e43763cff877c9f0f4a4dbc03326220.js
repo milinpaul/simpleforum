@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52dbd2328e23f0b2fc9d2f48ee9fcf26",
+    "revision": "9b1167b3b43f77efb25d805bafccabc2",
     "url": "/simple-forum/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-forum/static/css/main.53dfbe53.chunk.css"
   },
   {
-    "revision": "ee6f7e4b28154dce5ce5",
-    "url": "/simple-forum/static/js/0.fdee6b35.chunk.js"
+    "revision": "f90d834e01bd6bbb8b0b",
+    "url": "/simple-forum/static/js/0.ca19aba3.chunk.js"
   },
   {
     "revision": "e8f9b2a03b830d96b998",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-forum/static/js/3.ab1e7543.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "040b5d1d85f8d31e8f18",
-    "url": "/simple-forum/static/js/4.0d5174f1.chunk.js"
+    "revision": "aa8e8d49113c5a2ac2dd",
+    "url": "/simple-forum/static/js/4.ec5be048.chunk.js"
   },
   {
     "revision": "e680822aa9bd760d10f0",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-forum/static/js/main.88c14ee6.chunk.js"
   },
   {
-    "revision": "589caa21c43daa7e12bb",
-    "url": "/simple-forum/static/js/runtime-main.48fd84d4.js"
+    "revision": "e1965235fd2a2afa6d98",
+    "url": "/simple-forum/static/js/runtime-main.29754088.js"
   }
 ]);
