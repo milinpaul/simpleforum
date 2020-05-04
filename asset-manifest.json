@@ -1,30 +1,30 @@
 {
   "files": {
-    "static/js/0.ca19aba3.chunk.js": "/simple-forum/static/js/0.ca19aba3.chunk.js",
-    "static/js/0.ca19aba3.chunk.js.map": "/simple-forum/static/js/0.ca19aba3.chunk.js.map",
-    "main.css": "/simple-forum/static/css/main.53dfbe53.chunk.css",
-    "main.js": "/simple-forum/static/js/main.88c14ee6.chunk.js",
-    "main.js.map": "/simple-forum/static/js/main.88c14ee6.chunk.js.map",
-    "runtime-main.js": "/simple-forum/static/js/runtime-main.29754088.js",
-    "runtime-main.js.map": "/simple-forum/static/js/runtime-main.29754088.js.map",
-    "static/js/3.ab1e7543.chunk.js": "/simple-forum/static/js/3.ab1e7543.chunk.js",
-    "static/js/3.ab1e7543.chunk.js.map": "/simple-forum/static/js/3.ab1e7543.chunk.js.map",
-    "static/js/4.ec5be048.chunk.js": "/simple-forum/static/js/4.ec5be048.chunk.js",
-    "static/js/4.ec5be048.chunk.js.map": "/simple-forum/static/js/4.ec5be048.chunk.js.map",
-    "static/js/5.de04a8e1.chunk.js": "/simple-forum/static/js/5.de04a8e1.chunk.js",
-    "static/js/5.de04a8e1.chunk.js.map": "/simple-forum/static/js/5.de04a8e1.chunk.js.map",
-    "static/js/6.5a370416.chunk.js": "/simple-forum/static/js/6.5a370416.chunk.js",
-    "static/js/6.5a370416.chunk.js.map": "/simple-forum/static/js/6.5a370416.chunk.js.map",
-    "index.html": "/simple-forum/index.html",
-    "precache-manifest.9e43763cff877c9f0f4a4dbc03326220.js": "/simple-forum/precache-manifest.9e43763cff877c9f0f4a4dbc03326220.js",
-    "service-worker.js": "/simple-forum/service-worker.js",
-    "static/css/main.53dfbe53.chunk.css.map": "/simple-forum/static/css/main.53dfbe53.chunk.css.map",
-    "static/js/3.ab1e7543.chunk.js.LICENSE.txt": "/simple-forum/static/js/3.ab1e7543.chunk.js.LICENSE.txt"
+    "static/js/0.ca19aba3.chunk.js": "/simpleforum/static/js/0.ca19aba3.chunk.js",
+    "static/js/0.ca19aba3.chunk.js.map": "/simpleforum/static/js/0.ca19aba3.chunk.js.map",
+    "main.css": "/simpleforum/static/css/main.53dfbe53.chunk.css",
+    "main.js": "/simpleforum/static/js/main.79a2963e.chunk.js",
+    "main.js.map": "/simpleforum/static/js/main.79a2963e.chunk.js.map",
+    "runtime-main.js": "/simpleforum/static/js/runtime-main.178e1e6a.js",
+    "runtime-main.js.map": "/simpleforum/static/js/runtime-main.178e1e6a.js.map",
+    "static/js/3.27566ae0.chunk.js": "/simpleforum/static/js/3.27566ae0.chunk.js",
+    "static/js/3.27566ae0.chunk.js.map": "/simpleforum/static/js/3.27566ae0.chunk.js.map",
+    "static/js/4.ec5be048.chunk.js": "/simpleforum/static/js/4.ec5be048.chunk.js",
+    "static/js/4.ec5be048.chunk.js.map": "/simpleforum/static/js/4.ec5be048.chunk.js.map",
+    "static/js/5.de04a8e1.chunk.js": "/simpleforum/static/js/5.de04a8e1.chunk.js",
+    "static/js/5.de04a8e1.chunk.js.map": "/simpleforum/static/js/5.de04a8e1.chunk.js.map",
+    "static/js/6.5a370416.chunk.js": "/simpleforum/static/js/6.5a370416.chunk.js",
+    "static/js/6.5a370416.chunk.js.map": "/simpleforum/static/js/6.5a370416.chunk.js.map",
+    "index.html": "/simpleforum/index.html",
+    "precache-manifest.c8630358a31b0da40a2d300b4a1f12b5.js": "/simpleforum/precache-manifest.c8630358a31b0da40a2d300b4a1f12b5.js",
+    "service-worker.js": "/simpleforum/service-worker.js",
+    "static/css/main.53dfbe53.chunk.css.map": "/simpleforum/static/css/main.53dfbe53.chunk.css.map",
+    "static/js/3.27566ae0.chunk.js.LICENSE.txt": "/simpleforum/static/js/3.27566ae0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.29754088.js",
-    "static/js/3.ab1e7543.chunk.js",
+    "static/js/runtime-main.178e1e6a.js",
+    "static/js/3.27566ae0.chunk.js",
     "static/css/main.53dfbe53.chunk.css",
-    "static/js/main.88c14ee6.chunk.js"
+    "static/js/main.79a2963e.chunk.js"
   ]
 }
