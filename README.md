@@ -2,8 +2,6 @@
 
 The Objective of this project is to create a simple forum with JSON placeholder API.
 
-You can [browse the app here](https://milinpaul.github.io/flight-search-app/).
-
 ## Technologies Used:
 
 - [React](https://reactjs.org/)<br>
