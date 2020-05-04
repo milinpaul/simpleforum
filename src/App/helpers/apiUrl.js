@@ -4,3 +4,5 @@ export const getSingleUserUrl = (userId) => `${process.env.REACT_APP_API_URL}/us
 export const getSinglePostUrl = (postId) => `${process.env.REACT_APP_API_URL}/posts/${postId}`
 export const getCommentsForPostUrl = (postId) =>
   `${process.env.REACT_APP_API_URL}/comments?postId=${postId}`
+export const getPostsForUserUrl = (userId) =>
+  `${process.env.REACT_APP_API_URL}/posts?userId=${userId}`

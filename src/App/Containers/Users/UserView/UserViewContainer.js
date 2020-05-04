@@ -1,17 +1,17 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import Spinner from "../../../Components/Spinner";
-import Button from "../../../Components/Buttons";
-import useRequest from "../../../Hooks/useRequest";
-import { getSingleUserUrl } from "../../../helpers/apiUrl";
+import Spinner from '../../../Components/Spinner'
+import Button from '../../../Components/Buttons'
+import useRequest from '../../../Hooks/useRequest'
+import { getSingleUserUrl, getPostsForUserUrl } from '../../../helpers/apiUrl'
+import PostGrid from '../../../Components/PostGrid'
+import PostCard from '../../../Components/PostCard'
 
-const UserViewWrapper = styled.div`
+const UserView = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40rem;
-  height: 25rem;
-`;
+`
 
 const UserViewCard = styled.div`
   border-radius: 0.5rem;
@@ -22,7 +22,8 @@ const UserViewCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
+  align-items: center;
+`
 
 const UserInfo = styled.div`
   display: flex;
@@ -36,28 +37,53 @@ const UserInfo = styled.div`
 
   & label {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     margin-right: 1rem;
   }
-`;
+`
+
+const Title = styled.h1`
+  margin: 1.2rem 0;
+  align-self: flex-start;
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-bottom: 2px solid #ccc;
+  }
+`
 
 const UserViewContainer = ({ match, history }) => {
   const [user, loading] = useRequest({
     url: getSingleUserUrl(match?.params?.userId),
-    method: { method: "GET" },
-  });
+    method: { method: 'GET' },
+  })
+  const [userPosts, userPostsLoading] = useRequest({
+    url: getPostsForUserUrl(match?.params?.userId),
+    method: { method: 'GET' },
+  })
 
-  if (loading) {
-    return <Spinner />;
+  if (loading || userPostsLoading) {
+    return <Spinner />
   }
 
   const onGoBackClickHandler = () => {
-    history.push("/");
-  };
+    history.push('/')
+  }
+
+  console.log('userPosts', userPosts)
 
   return (
-    <UserViewWrapper>
+    <UserView>
       <UserViewCard>
+        <Title>User Info</Title>
         <UserInfo>
           <label>Name: </label>
           <h3>{user.name}</h3>
@@ -80,8 +106,25 @@ const UserViewContainer = ({ match, history }) => {
         </UserInfo>
         <Button onClick={onGoBackClickHandler}>Go Back</Button>
       </UserViewCard>
-    </UserViewWrapper>
-  );
-};
+      <Title>User's Recent Posts</Title>
+      <PostGrid>
+        {userPosts &&
+          userPosts.map((post) => {
+            return (
+              <PostCard
+                history={history}
+                key={post.id}
+                id={post.id}
+                title={post.title}
+                body={post.body}
+                userId={user?.id}
+                username={user?.username}
+              />
+            )
+          })}
+      </PostGrid>
+    </UserView>
+  )
+}
 
-export default UserViewContainer;
+export default UserViewContainer
