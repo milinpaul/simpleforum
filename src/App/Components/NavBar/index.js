@@ -32,7 +32,7 @@ const NavItems = styled.ul`
 
 const NavItem = styled.li`
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
